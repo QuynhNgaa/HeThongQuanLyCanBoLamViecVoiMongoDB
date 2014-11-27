@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="QLCBDataSet1" targetNamespace="http://tempuri.org/QLCBDataSet1.xsd" xmlns:mstns="http://tempuri.org/QLCBDataSet1.xsd" xmlns="http://tempuri.org/QLCBDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="QLCBConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="QLCBConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.Login.Properties.Settings.GlobalReference.Default.QLCBConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="VBangcapTableAdapter" GeneratorDataComponentClassName="VBangcapTableAdapter" Name="VBangcap" UserDataComponentName="VBangcapTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="QLCBConnectionString (Settings)" DbObjectName="QLCB.dbo.VBangcap" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT [Mã bằng cấp], [Tên bằng cấp] FROM dbo.VBangcap</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="Mã bằng cấp" DataSetColumn="Mã bằng cấp" />
+              <Mapping SourceColumn="Tên bằng cấp" DataSetColumn="Tên bằng cấp" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="QLCBDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="QLCBDataSet1" msprop:Generator_UserDSName="QLCBDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="VBangcap" msprop:Generator_TableClassName="VBangcapDataTable" msprop:Generator_TableVarName="tableVBangcap" msprop:Generator_TablePropName="VBangcap" msprop:Generator_RowDeletingName="VBangcapRowDeleting" msprop:Generator_RowChangingName="VBangcapRowChanging" msprop:Generator_RowEvHandlerName="VBangcapRowChangeEventHandler" msprop:Generator_RowDeletedName="VBangcapRowDeleted" msprop:Generator_UserTableName="VBangcap" msprop:Generator_RowChangedName="VBangcapRowChanged" msprop:Generator_RowEvArgName="VBangcapRowChangeEvent" msprop:Generator_RowClassName="VBangcapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Mã_x0020_bằng_x0020_cấp" msprop:Generator_ColumnVarNameInTable="columnMã_bằng_cấp" msprop:Generator_ColumnPropNameInRow="Mã_bằng_cấp" msprop:Generator_ColumnPropNameInTable="Mã_bằng_cấpColumn" msprop:Generator_UserColumnName="Mã bằng cấp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Tên_x0020_bằng_x0020_cấp" msprop:Generator_ColumnVarNameInTable="columnTên_bằng_cấp" msprop:Generator_ColumnPropNameInRow="Tên_bằng_cấp" msprop:Generator_ColumnPropNameInTable="Tên_bằng_cấpColumn" msprop:Generator_UserColumnName="Tên bằng cấp">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:VBangcap" />
+      <xs:field xpath="mstns:Mã_x0020_bằng_x0020_cấp" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

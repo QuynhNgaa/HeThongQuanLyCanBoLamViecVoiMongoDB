@@ -1,0 +1,332 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{005AA434-6D17-491F-8957-C41D25C27AB4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Login</RootNamespace>
+    <AssemblyName>Login</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MongoDB.Bson">
+      <HintPath>D:\MGCSharpDriver-1.9.2\MongoDB.Bson.dll</HintPath>
+    </Reference>
+    <Reference Include="MongoDB.Driver">
+      <HintPath>D:\MGCSharpDriver-1.9.2\MongoDB.Driver.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="access.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="access.Designer.cs">
+      <DependentUpon>access.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Danhsachcanbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Danhsachcanbo.Designer.cs">
+      <DependentUpon>Danhsachcanbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dangnhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dangnhap.Designer.cs">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Log.cs" />
+    <Compile Include="QLCBDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCBDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCBDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCBDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCBDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCBDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCBDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLCBDataSet9.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLCBDataSet9.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Suacanbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Suacanbo.Designer.cs">
+      <DependentUpon>Suacanbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Thembangcap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Thembangcap.Designer.cs">
+      <DependentUpon>Thembangcap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Doimatkhau.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Doimatkhau.Designer.cs">
+      <DependentUpon>Doimatkhau.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themcanbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themcanbo.Designer.cs">
+      <DependentUpon>Themcanbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themdonvi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themdonvi.Designer.cs">
+      <DependentUpon>Themdonvi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themkhenthuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themkhenthuong.Designer.cs">
+      <DependentUpon>Themkhenthuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themkhenthuongcanbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themkhenthuongcanbo.Designer.cs">
+      <DependentUpon>Themkhenthuongcanbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themkyluat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themkyluat.Designer.cs">
+      <DependentUpon>Themkyluat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themkyluatcanbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themkyluatcanbo.Designer.cs">
+      <DependentUpon>Themkyluatcanbo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themluong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themluong.Designer.cs">
+      <DependentUpon>Themluong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Themquatrinhct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Themquatrinhct.Designer.cs">
+      <DependentUpon>Themquatrinhct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transaction.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transaction.Designer.cs">
+      <DependentUpon>Transaction.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Trogiup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Trogiup.Designer.cs">
+      <DependentUpon>Trogiup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Xoacanbo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Xoacanbo.Designer.cs">
+      <DependentUpon>Xoacanbo.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="access.resx">
+      <DependentUpon>access.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Danhsachcanbo.resx">
+      <DependentUpon>Danhsachcanbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dangnhap.resx">
+      <DependentUpon>Dangnhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Suacanbo.resx">
+      <DependentUpon>Suacanbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Thembangcap.resx">
+      <DependentUpon>Thembangcap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Doimatkhau.resx">
+      <DependentUpon>Doimatkhau.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themcanbo.resx">
+      <DependentUpon>Themcanbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themdonvi.resx">
+      <DependentUpon>Themdonvi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themkhenthuong.resx">
+      <DependentUpon>Themkhenthuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themkhenthuongcanbo.resx">
+      <DependentUpon>Themkhenthuongcanbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themkyluat.resx">
+      <DependentUpon>Themkyluat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themkyluatcanbo.resx">
+      <DependentUpon>Themkyluatcanbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themluong.resx">
+      <DependentUpon>Themluong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Themquatrinhct.resx">
+      <DependentUpon>Themquatrinhct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Transaction.resx">
+      <DependentUpon>Transaction.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Trogiup.resx">
+      <DependentUpon>Trogiup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Xoacanbo.resx">
+      <DependentUpon>Xoacanbo.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="QLCBDataSet.xsc">
+      <DependentUpon>QLCBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCBDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCBDataSet.xss">
+      <DependentUpon>QLCBDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet1.xsc">
+      <DependentUpon>QLCBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCBDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCBDataSet1.xss">
+      <DependentUpon>QLCBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet2.xsc">
+      <DependentUpon>QLCBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCBDataSet2.xss">
+      <DependentUpon>QLCBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet3.xsc">
+      <DependentUpon>QLCBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCBDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCBDataSet3.xss">
+      <DependentUpon>QLCBDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet9.xsc">
+      <DependentUpon>QLCBDataSet9.xsd</DependentUpon>
+    </None>
+    <None Include="QLCBDataSet9.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLCBDataSet9.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLCBDataSet9.xss">
+      <DependentUpon>QLCBDataSet9.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
